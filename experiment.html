@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Alejandro's Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <style>
+    body{
+      text-align: center;
+    }
+</style>
+  <body>
+    <header>
+        <h1><a href="./index.html">Alejandro's Portfolio</a></h1>
+        <nav>
+            <ul>
+                <li><a href="./about.html">About Me</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./project.html">Projects</a></li>
+                <li><a href="./experiment.html">Experiment</a></li>
+            </ul>
+        </nav>
+    </header>
+      <main>
+         <p> 
+            Hard work, <br>
+            Dedication, <br>
+            <strong>Motivation.</strong>
+        </p>
+        <pre>hello         world 
+            :)
+        </pre>
+    
+        <canvas id="Canvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+        <script>
+            var can = document.getElementById("Canvas");
+            var ctx = can.getContext("2d");
+            ctx.font = "54px Sans";
+            ctx.strokeText("Practice", 20, 60);
+        </script>
+        <div>
+            <svg width="300" height="200">
+                <polygon points="100,10 40,198 190,20 140,78 160,198"></polygon>
+              </svg>
+            <p> shape made with <code> svg </code></p>
+        </div>
+        <br>
+        <form >
+            <label for="Pets">Choose a pet:</label>
+            <select name="pets" id="pets">
+              <optgroup label="Dogs">
+                <option value="German Shepard">German Shepard</option>
+                <option value="Corgi">Corgi</option>
+              </optgroup>
+              <optgroup label="Cats">
+                <option value="Persian cat">Persian cat</option>
+                <option value="Maine Coon">Maine Coon</option>
+              </optgroup>
+            </select>
+            <input type="submit" value="Submit">
+          </form>
+          <br>
+          <form >
+            <fieldset>
+             <legend>Email for updates</legend>
+             <label for="Email">Email:</label>
+             <input type="text" id="fname" name="fname"><br><br>
+            </fieldset>
+           </form>
+           <br>
+           <br>
+          <form >
+            <label for="Best Language">Choose your favorite language</label>
+            <input list="language" name="language" id="language">
+            <datalist id="language">
+              <option value="C++">
+              <option value="Java">
+              <option value="JavaScript">
+              <option value="Python">
+                <option value="C">
+            </datalist>
+            <input type="submit">
+          </form>
+          <br>
+          <button type="button">Win!</button>
+          <br>
+           <table>
+            <caption>Video games</caption>
+            <colgroup>
+                <col span="3" style="background-color: aqua;">
+              </colgroup>
+            <tr>
+              <th>Game Company</th>
+              <th>Game</th>
+            </tr>
+            <tr>
+              <td>Riot Games</td>
+              <td>League Of Legends</td>
+
+            </tr>
+            <tr>
+              <td>EA</td>
+              <td>Mass Effect</td>
+            </tr>
+          </table>
+           </body>
+           </html>
+        
+        <audio src="./Silent.mp3" controls></audio>
+        <br>
+        <video src="./Random.mp4" width="320" height="240" controls></video>
+    
+        
+
+
+      </main>
+      <footer>
+        <p>Author: <em>Alejandro Lobo</em></p>
+        <p><a href="mailto:alobo.ucsd.edu">alobo@ucsd.edu</a></p>
+      </footer>
+  </body>
+</html>
