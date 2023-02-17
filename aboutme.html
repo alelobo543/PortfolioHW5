@@ -6,12 +6,70 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="stylesheet.js">
     <style>
-      *{
-        font-family: sans-serif;
-      }
-      body{
-        text-align: left;
-      }
+        *{
+            font-family: sans-serif;
+            font-size: 1.15rem;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(249, 103, 103);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+        #me{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            min-width: 300px;
+            max-width: 500px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        main {
+            background-color: rgb(107, 196, 255);
+        
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(107, 196, 255);
+            padding: 1rem;
+            margin-left: 15vw;
+        }
+
+        section {
+            width: 50%;
+            margin: 0 1rem;
+        }
+
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
     </style>
   </head>
   <body>
@@ -22,12 +80,13 @@
                 <li><a href="./aboutme.html">About Me</a></li>
                 <li><a href="./myskills.html">My Skills</a></li>
                 <li><a href="./myprojects.html">My Projects</a></li>
-                <li><a href="./experiments.html">Experiments</a></li>
+                
             </ul>
         </nav>
     </header>
       <main>
         <h2>About Me</h2>
+    <div>
         <section>
             <h3>Goals</h3> 
                   <ul>
@@ -40,11 +99,15 @@
         <hr> 
         <section>
             <h3>Hobbies</h3>
+                <ul>
                     <li>I enjoy chess</li>
                     <li>I like running and indoor rock climbing</li>                 
                   </ul>
         </section>
-
+        </div>
+        <picture>
+            <img src="./me.jpg" id="me" alt="me"  >
+        </picture>
     
         
 
