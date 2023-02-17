@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="stylesheet.js">
     <style>
-       *{
-        font-family: sans-serif;
-      }
-      body{
-        text-align: left;
-      }
+        *{
+            font-family: sans-serif;
+            font-size: 1.15rem;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(249, 103, 103);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+        }
+        h2{
+            text-align: center;
+        }
+        main {
+            background-color: rgb(107, 196, 255);
+            border: 3px solid black;
+        
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            
+            background-color: rgb(107, 196, 255);
+            padding: 1rem;
+            margin-left: 15vw;
+        }
+
+        section {
+            width: 50%;
+            margin: 0 1rem;
+        }
+
+        footer {
+            padding: 1rem;
+            text-align: center;
+        }
     </style>
   </head>
   <body>
@@ -22,22 +75,23 @@
                 <li><a href="./aboutme.html">About Me</a></li>
                 <li><a href="./myskills.html">My Skills</a></li>
                 <li><a href="./myprojects.html">My Projects</a></li>
-                <li><a href="./experiments.html">Experiments</a></li>
             </ul>
         </nav>
     </header>
       <main>
           <h2>My Projects</h2>
        
-        <div>
-          <h3>Ongoing</h3>
-            <section>
+        
+          <div>
+            <section id="ongoing">
+                <h3>Ongoing</h3>
                 <h4>My Portfolio</h4>
                 <iframe src="index.html" name="Home"></iframe>
               <p> <i> https://moonlit-blini-e65e57.netlify.app/ </i>  </p>
             </section>
-          <h3>Previous</h3>
-            <section>
+          
+            <section id="previous">
+                <h3>Previous</h3>
                 <h4>Andriod App</h4>
 
                 <figure>
@@ -53,13 +107,14 @@
                  <li>Created an android app that let the user connect with students that have taken classes</li>
                   <li>Worked through the agile development processs</li>
                   </ul>
-              <h4> Laserboard for CSE 176A<h4>
+              <h4> Laserboard for CSE 176A</h4>
               <ul>
                  <li>Created a prototype for a portable laserboard that relied only on head movement that could ease the difficulty of communicating for someone who is mute and quadriplegic</li>
                   <li>Worked closely with someone affected to properly learn what they wanted for this prototype.</li>
                   </ul>
             </section>
-        </div>
+            </div>
+        
         <br>
           
 
