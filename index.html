@@ -85,6 +85,32 @@
             50%  {background-color: rgb(123, 247, 107);}
             100% {background-color: rgb(236, 51, 140);}
         }
+         @media only screen and (max-width: 600px) {
+
+        main {
+          width: 100%;
+          margin: 0;
+        }
+
+      }
+
+      /* For tablets */
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+        main {
+          width: 100%;
+          margin: 0;
+        }
+      }
+
+      /* For desktop */
+      @media only screen and (min-width: 1025px) {
+
+        main {
+          width: 50%;
+          margin: 0 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -126,5 +152,4 @@
       </footer>
   </body>
 </html>
-
 
