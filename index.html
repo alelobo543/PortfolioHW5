@@ -28,7 +28,9 @@
             list-style: none;
             margin: 0;
             padding: 0;
+
         }
+
 
         nav li {
             margin-right: 1rem;
@@ -37,16 +39,51 @@
         nav a {
             color: black;
             text-decoration: none;
+
+        }
+        a {
+            transition-property: background-color;
+            transition-duration: 0.1s;
+            transition-delay:0.1s;
+        }
+        a:hover { 
+            background-color:rgb(123, 247, 107);
         }
         main {
             text-align: center;
             background-color: rgb(107, 196, 255);
-           border: 3px solid black;
 
         }
         footer {
             padding: 1rem;
             text-align: center;
+        }
+
+        .oval {
+            margin-left: 45%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            animation-name: welcome;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            border-radius: 50px;
+            transition: transform 0.2s;
+        }
+        .oval:hover{
+            transform: scale(2);
+        }
+
+
+        @keyframes welcome {
+            0%   {background-color: rgb(236, 51, 140);}
+            50%  {background-color: rgb(123, 247, 107);}
+            100% {background-color: rgb(236, 51, 140);}
         }
     </style>
   </head>
@@ -73,8 +110,9 @@
             <textarea id="review" name="review" rows="4" cols="50">
                 Review here.
               </textarea>
-              <input type="submit" value="Submit">
+              <input id="submit" type="submit" value="Submit">
             </form>
+            <div class="oval"> Welcome!</div>
             <template>
                 <h2>Cat!</h2>
                 <img src="./cat.jpeg" width="115" height="150">
@@ -88,4 +126,5 @@
       </footer>
   </body>
 </html>
+
 
