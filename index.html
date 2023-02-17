@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="stylesheet.js">
     <style>
-        *{
+      *{
         font-family: sans-serif;
         font-size: 1.15rem;
-    }
+      }
       body {
             display: flex;
             flex-direction: column;
@@ -28,9 +28,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
-
         }
-
 
         nav li {
             margin-right: 1rem;
@@ -39,7 +37,6 @@
         nav a {
             color: black;
             text-decoration: none;
-
         }
         a {
             transition-property: background-color;
@@ -49,41 +46,25 @@
         a:hover { 
             background-color:rgb(123, 247, 107);
         }
-        main {
+        h2{
             text-align: center;
-            background-color: rgb(107, 196, 255);
-
         }
+        main {
+            background-color: rgb(107, 196, 255);
+            border: 3px solid black;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(107, 196, 255);
+            padding: 1rem;
+            margin-left: 1vw;
+        }
+
         footer {
             padding: 1rem;
             text-align: center;
-        }
-
-        .oval {
-            margin-left: 45%;
-            display:flex;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-            height: 100px;
-            background-color: red;
-            animation-name: welcome;
-            animation-duration: 3s;
-            animation-timing-function: ease;
-            animation-delay: .5s;
-            animation-iteration-count: infinite;
-            border-radius: 50px;
-            transition: transform 0.2s;
-        }
-        .oval:hover{
-            transform: scale(2);
-        }
-
-
-        @keyframes welcome {
-            0%   {background-color: rgb(236, 51, 140);}
-            50%  {background-color: rgb(123, 247, 107);}
-            100% {background-color: rgb(236, 51, 140);}
         }
     </style>
   </head>
@@ -100,31 +81,36 @@
         </nav>
     </header>
       <main>
-        <details>
-            <summary>
-                Site dedicated to finding out about <b> me</b>.
-            </summary>
-        </details>
-        <form >
-            <label for="Review">Review of site:</label>
-            <textarea id="review" name="review" rows="4" cols="50">
-                Review here.
-              </textarea>
-              <input id="submit" type="submit" value="Submit">
-            </form>
-            <div class="oval"> Welcome!</div>
-            <template>
-                <h2>Cat!</h2>
-                <img src="./cat.jpeg" width="115" height="150">
-              </template>
+        <h2>Skills</h2>
+        <div>
+        <section>
+            <h3>Technical Skills</h3> 
+            <ol>
+                <li>Programming Skills: C, C++, Java, Python, Bash, HTML, CSS, Javascript Mobile Software Development</li>
+                <li>Experienced in the Agile Software Process</li>
+                <li>Python</li>
+                <li>Learning html,css,javascript</li>
+            </ol>
+            <aside>Check out the projects tab to see what I have done with some of these on the My Projects Tab!</aside>
+
+        </section>
 
 
+        <section>
+            <h3>Interpersonal Skills</h3>
+            <ol>
+                <li>Public Speaking</li>
+                <li>Teamwork</li>
+                <li>Leadership Experience</li>
+              <li> Seal of Biliteracy-Spanish </li> 
+            </ol>
+        </section>
+    </div>
       </main>
       <footer>
-        <p>Author: <em>Alejandro Lobo</em></p>
+         <p>Author: <em>Alejandro Lobo</em></p>
         <p><a href="mailto:alobo.ucsd.edu">alobo@ucsd.edu</a></p>
       </footer>
   </body>
 </html>
-
 
