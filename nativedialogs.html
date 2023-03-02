@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Native Dialogs</title>
+    <script type="text/javascript" src="./purify.min.js"></script>
+    <script>
+        window.addEventListener('load',init)
+        function init() {
+            
+            let alertBtn=document.getElementById("alert");
+            alertBtn.addEventListener("click", function() { 
+                alert("You have been alerted")});
+            let confirmBtn=document.getElementById("confirm");
+            let output= document.getElementById("output");
+            confirmBtn.addEventListener("click",function() {
+                 output.innerHTML="The value returned by the confirm method is : "+confirm("You good?");
+            });
+            let promptBtn =document.getElementById("prompt");
+            promptBtn.addEventListener("click",function() {
+                let answer = prompt("Enter your password ;)")
+                if(answer ==null){
+                    output.innerHTML="User didn't enter anything"
+                }
+                else{
+                    output.innerHTML=`The value returned by the prompt method is ${answer}`
+                }
+            })
+            let saferBtn =document.getElementById("safer-prompt");
+            saferBtn.addEventListener("click",() => {
+                let dirty = prompt("Enter your password ;)")
+                if(dirty ==null){
+                    output.innerHTML="User didn't enter anything"
+                }
+                else{
+                    let clean = DOMPurify.sanitize(dirty);
+                    output.innerHTML=`The value returned by the prompt method is ${clean}`
+                }
+            })
+        }
+
+    </script>
+  </head>
+  <body>
+    <h1>Native Dialogs</h1>
+    <button id ="alert">Alert</button>
+    <button id ="confirm">Confirm</button>
+    <button id ="prompt">Prompt</button>
+    <button id ="safer-prompt">Safer Prompt</button>
+    <hr/>
+    <output id="output"></output>
+  </body>
+</html>

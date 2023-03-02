@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Dialogs</title>
+    <script type="text/javascript" src="./purify.min.js"></script>
+    <script type="text/javascript" src="./customdialogs.js" async></script>
+  </head>
+  <body>
+    <h1>Custom Dialogs</h1>
+    <!-- dialog for alert -->
+    <dialog id="alert">
+        <p>Alert!</p>
+        <button id="ok">OK</button>
+    </dialog>
+    <!-- dialog for confirm -->
+    <dialog id="confirm">
+        <p>Do you confirm?</p>
+        <button id="confirmBtn1">Confirm</button>
+        <button id="cancel1">Cancel</button>
+        
+    </dialog>
+    <!-- dialog for prompt -->
+    <dialog id="prompt">
+        <p>Enter your name</p>
+        <input type="text" id="fname" name="fname">
+        <button id="confirmBtn2">Confirm</button>
+        <button id="cancel2">Cancel</button>
+    </dialog>
+    <p>
+        <button id="alertBtn">Alert</button>
+        <button id="confirmBtn">Confirm</button>
+        <button id="promptBtn">Prompt</button>
+    </p>
+    <br/>
+    <output id="output"></output>
+  </body>
+</html>
