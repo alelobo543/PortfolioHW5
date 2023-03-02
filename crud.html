@@ -11,11 +11,24 @@
     <!-- newPost dialog -->
     <dialog id="newPost">
         <p>Blog Post</p>
-        <input type="text" id="title" name="title">
-        <input type="date" id="date" name="date">
-        <textarea id="summary"></textarea>
+        <input type="text" id="title" name="title" value="">
+        <input type="date" id="date" name="date" value="">
+        <textarea id="summary" value=""></textarea>
         <button id="save">Save</button>
         <button id="cancel">Cancel</button>
+    </dialog>
+    <dialog id="editPost">
+      <p>Edit Post</p>
+      <input type="text" id="titleEdit" name="title">
+      <input type="date" id="dateEdit" name="date">
+      <textarea id="summaryEdit"></textarea>
+      <button id="saveEdit">Save</button>
+      <button id="cancelEdit">Cancel</button>
+    </dialog>
+    <dialog id="deletePost">
+      <p>Are you sure you want to Delete?</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
     </dialog>
     <br/>
     <button id="addBtn">Add Post</button>
