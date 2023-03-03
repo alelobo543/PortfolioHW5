@@ -1,0 +1,1 @@
+Changes: Only added google analytics api to get data from users to see how many people are viewing my page, how much time are they spending on the site. This can help me see what viewers like the most and what keep sthem interested

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Crud</title>
+    <script type="text/javascript" src="./blog.js" async></script>
+    <script type="text/javascript" src="./styledcrud.js" async></script>
+    <style> 
+    </style>
+  </head>
+  <body>
+    <h1>List of Blogs</h1>
+        <ul id="blogs">
+        </ul>
+    <!-- newPost dialog -->
+    <dialog id="newPost">
+        <p>Blog Post</p>
+        <input type="text" id="title" name="title" value="">
+        <input type="date" id="date" name="date" value="">
+        <textarea id="summary" value=""></textarea>
+        <button id="save">Save</button>
+        <button id="cancel">Cancel</button>
+    </dialog>
+    <dialog id="editPost">
+      <p>Edit Post</p>
+      <input type="text" id="titleEdit" name="title">
+      <input type="date" id="dateEdit" name="date">
+      <textarea id="summaryEdit"></textarea>
+      <button id="saveEdit">Save</button>
+      <button id="cancelEdit">Cancel</button>
+    </dialog>
+    <dialog id="deletePost">
+      <p>Are you sure you want to Delete?</p>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </dialog>
+    <br/>
+    <button id="addBtn">Add Post</button>
+  </body>
+</html>
