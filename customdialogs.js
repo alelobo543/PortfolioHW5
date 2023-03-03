@@ -28,6 +28,7 @@ confirmBtn1.addEventListener("click", () => {
     output.innerHTML = "The value returned by the confirm method is : true";
 });
 cancelBtn1.addEventListener("click", () => {
+    confirmDialog.close();
     output.innerHTML="User didn't enter anything";
 });
 promptBtn.addEventListener("click", () => {
