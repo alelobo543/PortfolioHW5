@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Method Test</title>
+    <script src="./methodtest.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">Alejandro Lobo's Portfolio</a></h1>
+      <nav>
+          <ul>
+              <li><a href="./aboutme.html">About Me</a></li>
+              <li><a href="./myskills.html">My Skills</a></li>
+              <li><a href="./myprojects.html">My Projects</a></li>
+              <li><a href="./methodtest.html">Method Test</a></li>
+              <li><a href="./webcomponent.html">Web Component</a></li>
+              
+          </ul>
+      </nav>
+  </header>
+    <main>
+      <h1>Method Test</h1>
+      <form>
+        <label for="id">ID:</label>
+        <input type="number" id="id" name="id" value=""><br>
+
+        <label for="article_name">Article Name:</label>
+        <input type="text" id="article_name" name="article_name" value=""><br>
+
+        <label for="article_body">Article Body:</label>
+        <textarea id="article_body" name="article_body" value=""></textarea><br>
+
+        <label for="date"></label>
+        <input type="text" id="date" name="date" readonly hidden="true"><br>
+      </form>
+      <input type="button" value="post" id="postBtn">
+      <input type="button" value="get" id="getBtn">
+      <input type="button" value="put" id="putBtn">
+      <input type="button" value="delete" id="deleteBtn">
+
+      <div id="responseOutput">&nbsp;</div>
+      <output id="response">&nbsp;</output>
+
+    </main>
+  </body>
+</html>
